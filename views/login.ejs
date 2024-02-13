@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login 🔐</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+  <div class="quadrado">
+    <h1>Área de login 🖊🔑</h1>
+  
+    <form action="/login" method="post">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Senha:</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Senha" required>
+        <p class="erro"><%= erro %></p>
+      </div>
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Enviar</button><br>
+        <a id="cade" href="/cadastro">Cadastre-se</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

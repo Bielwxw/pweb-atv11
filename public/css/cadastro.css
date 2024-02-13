@@ -1,0 +1,45 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/600/360/964/digital-art-landscape-forest-mountains-wallpaper-thumb.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quadrado {
+  padding: 2em;
+  background-color: rgba(128, 128, 128, 0.544);
+  backdrop-filter: blur(20px);
+  border-radius: 1em;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.erro {
+  color: red;
+  font-size: small;
+}
+
+#log-link {
+  color: black;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  font-size: 18px;
+  text-align: center;
+  text-decoration-line: none;
+  transition: .15s opacity ease-in-out;
+}
+
+#log-link:hover {
+  opacity: .7;
+  text-decoration-line: underline;
+}
