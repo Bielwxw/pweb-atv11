@@ -22,7 +22,7 @@ Referente a um projeto passado como atividade 11 , na matéria de pweb 💻☕�
 => (mapa em desenvolvimento ⚠)
 
 
-## Referência📌
+## Referências 📌
 - **[Bootstrap framework](https://getbootstrap.com/)**
 
 - **[Express-js Documention](https://expressjs.com/)**
