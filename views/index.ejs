@@ -3,16 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
-
+    <title>TaskSync</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TvxPj9i1srBMNeEWIr58F1KnGZPkcyiliA&usqp=CAU" type="image/x-icon">
     <style>
-        body{
-            background-color: gray;
+        body {
+            background-image: url('https://backiee.com/static/wpdb/wallpapers/1000x563/268752.jpg');
+            font-family: Arial, sans-serif; /* Fonte */
+            overflow: hidden;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.623) !important; /* Cor de fundo do navbar */
+        }
+
+        div:has(>#video){
+          display: flex;
+          justify-content: center;
+        }
+
+        #video {
+           width:60%; /* Largura total */
+            height: 400px; /* Altura fixa */
+            margin-top: 70px; /* Espaçamento superior */
+            border: none; /* Sem borda */
+        }
+
+        .container {
+            max-width: 800px; /* Largura máxima do conteúdo */
+            margin: 20px auto; /* Centralizar na página */
+        }
+
+        .btn-container {
+            margin-top: 10px; /* Espaçamento superior */
+        }
+
+        .carousel-img {
+            width: 100%;
+            height: 70vh;
+            background-size: 70%;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+        }
+
+        .carousel-item:nth-child(1) .carousel-img {
+            background-image: url(https://www.notion.so/cdn-cgi/image/format=webp,width=1920,quality=100/https://img.youtube.com/vi/FElBbgnNtVA/maxresdefault.jpg);
+        }
+        .carousel-item:nth-child(3) .carousel-img {
+            background-image: url(https://images.ctfassets.net/spoqsaf9291f/546F1MvF9KlFXBOO41AKLx/605f38de934bb47bcd89e6335eee1242/projects.png);
         }
     </style>
 </head>
-
 <body>
-    <h1>página inicial</h1>
+   
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">TaskSync 📂 </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-container d-flex align-items-center ">
+            <a class="btn nav-link me-3"href="/login">Sign in</a> 
+            <a href="/cadastro" class="btn btn-dark">Register</a>
+        </div>
+    </div>
+</nav>  
+
+<br>
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="carousel-img"></div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-img">
+            <iframe id="video" src="https://www.youtube.com/embed/1RxvQ3-0WoU?si=fPj6lotZmIT_QDhp" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-img"></div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

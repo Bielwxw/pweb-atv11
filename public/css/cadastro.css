@@ -5,7 +5,7 @@ body {
 }
 
 body{
-  background-image: url('https://c4.wallpaperflare.com/wallpaper/600/360/964/digital-art-landscape-forest-mountains-wallpaper-thumb.jpg');
+  background-image: url(/img/zyro-image.png); 
   background-size: cover;
   display: flex;
   align-items: center;
@@ -13,10 +13,11 @@ body{
 }
 
 .quadrado {
+  color: black;
   padding: 2em;
-  background-color: rgba(128, 128, 128, 0.544);
-  backdrop-filter: blur(20px);
+  background-color: rgba(110, 110, 110, 0.699);
   border-radius: 1em;
+  border: 2px solid white;
 }
 
 h1 {
@@ -29,7 +30,7 @@ h1 {
 }
 
 #log-link {
-  color: black;
+  color: white;
   padding: 0;
   margin: 0;
   line-height: 0;
@@ -40,6 +41,12 @@ h1 {
 }
 
 #log-link:hover {
+  color: black;
   opacity: .7;
   text-decoration-line: underline;
+}
+
+#cad-envio{
+  background-color: black !important;
+  border: none;
 }
