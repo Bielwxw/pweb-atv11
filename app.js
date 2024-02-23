@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const app = express();
 
@@ -8,8 +9,9 @@ const upload = multer();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.set('view engine' ,'ejs');
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 let pessoas = [
     { name: 'aaa', email: 'a@a', password: '123' },
@@ -78,4 +80,6 @@ app.get('/lista/json', (req, res) => {
     });
 });
 
-app.listen(3000, () => console.log('Server ready'));
+// app.listen(3000, () => console.log('Server ready'));
+
+module.exports = app;
